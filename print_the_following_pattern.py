@@ -1,9 +1,8 @@
 a=int(input())
-i=a
-while(i>0):
-    j=1
-    while(j<=i):
-        print(j,end='')
-        j+=1
+for i in range(1,a+1):
+    for j in range(1,a+1):
+        if(i==j):
+            print('0',end='')
+        else:
+            print('x',end='')
     print()
-    i-=1
