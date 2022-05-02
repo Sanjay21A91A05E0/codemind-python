@@ -1,0 +1,11 @@
+a=int(input())
+s=0
+k=a
+while(a):
+    d=a%10
+    s=s*10+d
+    a//=10
+if(s==k):
+    print("True")
+else:
+    print("False")
