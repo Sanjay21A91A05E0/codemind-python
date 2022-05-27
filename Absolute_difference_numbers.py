@@ -1,0 +1,10 @@
+a,b=map(int,input().split())
+a=list(str(a))
+k=a[0:b]
+g=''.join(k)
+a=a[::-1]
+h=a[0:b]
+h=h[::-1]
+l=''.join(h)
+f=abs(int(g)-int(l))
+print(f)
