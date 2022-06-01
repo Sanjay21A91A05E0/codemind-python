@@ -1,2 +1,2 @@
-a=input()[::-1]
-print(a)
+a=list(map(str,input().split()))
+print(*a[::-1])
