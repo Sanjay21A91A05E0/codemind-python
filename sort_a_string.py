@@ -1,18 +1,20 @@
-a=input()
+a=input().split()
+b=[]
 c=[]
-d=[]
-for i in range(len(a)):
-    if(a[i].isalpha() or a[i].isdigit()):
-        c.append(a[i])
-    else:
-        d.append(a[i])
-c.sort()
-j=0
-k=0
-for i in range(len(a)):
-    if(a[i].isalpha() or a[i].isdigit()):
-        print(c[j],end='')
-        j+=1
-    else:
-        print(d[k],end='')
-        k+=1
+for i in a:
+    for j in i:
+        if j.isalpha():
+            b.append(j)
+        else:
+            c.append(j)
+b.sort()
+k,l=0,0
+for i in a:
+    for j in range(len(i)):
+        if i[j] in b:
+            print(b[k],end='')
+            k+=1
+        else:
+            print(c[l],end='')
+            l+=1
+    print(end=' ')
