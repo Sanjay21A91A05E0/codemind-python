@@ -1,7 +1,5 @@
-a=list(map(str,input().split()))
+a=input().split()
 for i in a:
-    s=0
-    p=0
-    s+=ord(max(i))
-    p+=ord(min(i))
-    print(s-p,end=' ')
+    k=max(i)
+    n=min(i)
+    print(abs(ord(k)-ord(n)),end=' ')
