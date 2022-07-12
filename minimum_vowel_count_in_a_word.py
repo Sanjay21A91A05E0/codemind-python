@@ -1,10 +1,11 @@
-a=list(map(str,input().split()))
-c=0
-s=[]
+a=input().lower().split()
+s='aeiou'
+d=[]
 for i in a:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in s:
             c+=1
-    s.append(c)
-print(min(s))
+    d.append(c)
+l=min(d)
+print(l)
