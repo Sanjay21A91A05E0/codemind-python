@@ -1,5 +1,3 @@
 a=input().split()
-a=a[::-1]
-for i in a:
-    print(i[0])
-    break
+s=a[len(a)-1]
+print(s[0])
