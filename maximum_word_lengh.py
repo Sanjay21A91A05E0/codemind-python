@@ -1,6 +1,6 @@
-a=list(map(str,input().split()))
+a=input().split()
 d=[]
 for i in a:
-    s=len(i)
-    d.append(s)
+    i=list(i)
+    d.append(len(i))
 print(max(d))
