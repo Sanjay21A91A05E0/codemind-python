@@ -1,6 +1,5 @@
 a=list(input().lower().replace(' ',''))
-a=list(set(a))
-a.sort()
 b='abcdefghijklmnopqrstuvwxyz'
+a=list(set(a))
 b=list(b)
-print(a==b)
+print(sorted(a)==b)
