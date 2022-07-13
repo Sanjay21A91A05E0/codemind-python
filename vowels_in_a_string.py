@@ -1,11 +1,11 @@
 a=input()
-n=input()
+v=input()
+s='aeiou'
+d=[]
 f=0
 for i in range(len(a)):
-    if(a[i]==n):
-        f=1
+    if(a[i]==v):
         print(True)
         print(i)
-        break
-if(f==0):
-    print(False)
+        quit()
+print(False)
