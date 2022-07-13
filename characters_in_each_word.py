@@ -1,4 +1,3 @@
-a=list(map(str,input().split()))
+a=input().split()
 for i in a:
-    s=len(i)
-    print(s,end=' ')
+    print(len(i),end=' ')
