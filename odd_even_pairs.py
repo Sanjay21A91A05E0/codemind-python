@@ -1,23 +1,23 @@
-a=int(input())
+n=int(input())
 s=list(map(int,input().split()))
-d,l=[],[]
+f,d=[],[]
 for i in s:
-    if(i%2):
-        d.append(i)
+    if(i%2!=0):
+        f.append(i)
     else:
-        l.append(i)
-k,c=0,0
-while(k<len(d) and k<len(l)):
-    print(d[k],l[k],end=' ')
-    k+=1
+        d.append(i)
+i,c=0,0
+while(i<len(f) and i<len(d)):
+    print(f[i],d[i],end=' ')
+    i+=1
     c+=2
-while(k<len(d)):
-    print(d[k],end=' ')
-    k+=1
+while(i<len(f)):
+    print(f[i],end=' ')
+    i+=1
     c+=1
-while(k<len(l)):
-    print(l[k],end=' ')
-    k+=1
+while(i<len(d)):
+    print(d[i],end=' ')
+    i+=1
     c+=1
 if(c%2):
-    print('0')
+    print("0")
