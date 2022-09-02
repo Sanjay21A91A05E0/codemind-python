@@ -1,14 +1,9 @@
-a=input()
-s='aeiou'
+s=input().lower()
+g='aeiou'
 c=0
-n=0
-d=len(a)-1
-for n in range(len(a)//2):
-    if(a[n] in s and a[d]not in s and a[n]!=' ' and a[d]!=' '):
-        #print(a[n],a[d])
-        c+=1
-    elif(a[n] not in s and a[d] in s and a[n]!=' ' and a[d]!=' '):
-        #print(a[n],a[d])
-        c+=1
-    d-=1
+k=len(s)
+for i in range(k//2):
+    if(s[i]!=' ' and s[k-i-1]!=' '):
+        if(s[i] in g and s[k-i-1] not in g) or(s[i]not in g and s[k-i-1] in g):
+            c+=1
 print(c)
