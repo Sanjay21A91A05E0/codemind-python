@@ -1,2 +1,1 @@
-i=int(input())
-print(i//10)
+print(int(input())//10)
